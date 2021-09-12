@@ -20,9 +20,9 @@ const circles = {
   }
 }
 
-function Circle({ type }) {
+function Circle({ type, onCircleClick }) {
   return (
-  <Container>
+  <Container onClick={() => onCircleClick(type)}>
     <Icon src={circles[type].icon} alt="" />
   </Container>
   );
