@@ -1,14 +1,23 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: aliceblue;
+  background: ${({ gradient }) => gradient};
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 8rem;
   height: 8rem;
-  border: 1rem solid red;
+`;
+
+export const IconContainer = styled.div`
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
 `;
 
 export const Icon = styled.img`
