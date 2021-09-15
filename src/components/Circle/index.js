@@ -27,10 +27,10 @@ function Circle({ type, onCircleClick }) {
   return (
   <Container 
     gradient={circles[type]?.gradient}
-    onClick={() => onCircleClick(type)}>
+    onClick={() => onCircleClick(type)}
+  >
       <IconContainer>
-
-    <Icon src={circles[type]?.icon} alt="" />
+        <Icon src={circles[type]?.icon} alt="" />
       </IconContainer>
   </Container>
   );

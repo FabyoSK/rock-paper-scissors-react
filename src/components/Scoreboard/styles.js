@@ -13,6 +13,7 @@ export const Logo = styled.img`
   width: 7rem;
   margin-left: 2rem;
 `;
+
 export const ScoreContainer = styled.div`
   display: flex;
   justify-content: center;

@@ -7,7 +7,7 @@ export const Container = styled.div`
   align-items: center;
   background: url(${bgIcon}) center no-repeat content-box;
   margin: 2rem;
-  height: 25rem;
+  height: 20rem;
 `;
 
 export const GameField = styled.div`
@@ -15,12 +15,13 @@ export const GameField = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 2rem;
-  height: 25rem;
+  height: 20rem;
 `;
 
 export const CircleContainer = styled.div`
   display: flex; 
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 `;
 
@@ -36,11 +37,11 @@ export const Result = styled.div`
   align-items: center;
   flex-direction: column;
   max-width: max-content;
-  margin: 0 auto;
+  margin: -2rem auto;
 `;
 
 export const ResultText = styled.h1`
   color: var(--white);
-  font-size: 5rem;
+  font-size: 4rem;
   text-transform: uppercase;
 `;
