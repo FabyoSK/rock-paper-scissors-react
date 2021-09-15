@@ -17,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
     background: hsl(214, 47%, 23%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
   }
 
 `;

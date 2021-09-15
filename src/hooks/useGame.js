@@ -2,7 +2,6 @@ import { createContext, useContext, useEffect, useState } from 'react';
 
 export const GameContext = createContext();
 
-
 const choiceEnum = {
   rock: "rock",
   paper: "paper",
@@ -19,7 +18,7 @@ export const GameProvider = ({ children }) => {
   const [userChoice, setUserChoice] = useState(null);
   const [gameChoice, setGameChoice] = useState(null);
   const [result, setResult] = useState(null);
-  const [score, setScore] = useState(null);
+  const [score, setScore] = useState(0);
   const [isGameStarted, setIsGameStarted] = useState(false);
 
   const handleSetUserChoice = (choice) => {
@@ -43,7 +42,8 @@ export const GameProvider = ({ children }) => {
       setResult("it's a Draw");
     }
      else {
-      setResult("You Lose")
+      setResult("You Lose");
+      setScore((prev) => prev - 1)
     }
   };
 
